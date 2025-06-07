@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electronics Engineering Department - MTI Thrissur</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+      color: #333;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { color: #2c3e50; }
+    a { color: #2980b9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      background: #1a2030;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: fadeInNav 1s ease;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      font-weight: 500;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background: #4ac29a;
+      position: absolute;
+      left: 0; bottom: -4px;
+      transition: width .3s;
+    }
+    nav a:hover::after { width: 100%; }
+
+    @keyframes fadeInNav {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 30px 0 10px;
+      animation: fadeInSection 1.2s ease;
+    }
+
+    section, header {
+      background: rgba(255,255,255,0.85);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      opacity: 0;
+      animation: fadeInSection 1s forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: .4s; }
+    section:nth-of-type(2) { animation-delay: .6s; }
+    section:nth-of-type(3) { animation-delay: .8s; }
+    section:nth-of-type(4) { animation-delay: 1s; }
+    .faculty-grid { animation-delay: 1.2s; }
+
+    @keyframes fadeInSection {
+      to { opacity: 1; }
+    }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0 20px 20px;
+      opacity: 0;
+      animation: fadeInSection 1s 1.2s forwards;
+    }
+    .faculty-member {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .faculty-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+    .faculty-photo {
+      width: 120px;
+      height: 140px;
+      margin: 0 auto 12px;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      background-color: #ccc;
+      border: 1px solid #888;
+    }
+
+    footer {
+      background: linear-gradient(to right, #1e2024, #3a3f5c);
+      padding: 40px 20px;
+      color: #ddd;
+      animation: fadeInSection 1s .2s forwards;
+      opacity: 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto 20px;
+    }
+    .footer-grid h3 {
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: #f1f1f1;
+    }
+    .footer-grid a {
+      color: #bbb;
+    }
+    .footer-grid a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: .9rem;
+      border-top: 1px solid #555;
+      padding-top: 10px;
+      color: #bbb;
+    }
+
+    @media (max-width:600px) {
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#materials">Study Materials</a>
+    <a href="#contact">Contact</a>
+    <a href="#links">Important Links</a>
+  </nav>
+
+  <h1 class="title" id="home">Department Of Electronics Engineering</h1>
+
+<marquee behavior="scroll" direction="left" scrollamount="5">
+    <a href="https://www.polyadmission.org" target="_blank" style="text-decoration: none; color: black;">
+        Diploma Admission Started - Click Here to Apply
+    </a>
+</marquee>
+  
+  <header>
+    <h2>Electronics Engineering Department</h2>
+    <p><strong>Established:</strong> 1972</p>
+    <p><strong>Programmes Offered:</strong> 3-Year Regular Diploma</p>
+    <p><strong>Annual Intake:</strong> 60 Students</p>
+  </header>
+  
+  <section>
+    <h2>Vision</h2>
+    <p><strong>To be a model Institute for providing academic and skill excellence in Electronics Engineering.</strong></p>
+  </section>
+
+  <section>
+    <h2>Mission</h2>
+    <ul>
+      <li><strong>Impart quality teaching-learning-experience with state of the art curriculum.</strong></li>
+      <li><strong>Enhance Training, Industry Institute Interaction and Entrepreneurship development.</strong></li>
+      <li><strong>Encourage students to improve their Creativity and Innovation to find solutions to common needs of society in a simpler way.</strong></li>
+      <li><strong>Foster sustained interaction with the alumni, industries, organizations and other stakeholders to stay relevant in the globalized environment.</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Laboratories</h2>
+    <ul>
+      <li>Electronics Circuits Lab</li>
+      <li>Digital Electronics Lab</li>
+      <li>Analog and Digital Communication Lab</li>
+      <li>Industrial Automation Lab</li>
+      <li>Microcontroller and Applications Lab</li>
+      <li>Electronics Tinkering Workshop</li>
+      <li>PCB and Prototyping Workshop</li>
+      <li>C and Python Programming Lab</li>
+      <li>Embedded Systems Lab</li>
+      <li>Computer Hardware Lab</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Career Opportunities</h2>
+    <ul>
+      <li>Electronics Manufacturing</li>
+      <li>Telecommunications</li>
+      <li>Automation and Control Systems</li>
+      <li>Embedded Systems</li>
+      <li>Consumer Electronics</li>
+      <li>Public Sector Undertakings</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Major Recruiters</h2>
+    <ul>
+      <li>Texas Instruments India Limited</li>
+      <li>Cadence Design Systems, Bengaluru</li>
+      <li>Centum Electronics</li>
+      <li>HL Mando</li>
+      <li>SFO Technologies</li>
+      <li>Visteon</li>
+      <li>Akshay Control Systems</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Syllabus</h2>
+    <a href="https://sitttrkerala.ac.in/index.php?r=site%2Fdiploma-syllabus-courses&prog=EL" target="_blank">Click Here</a>
+</section>
+
+  <section id="faculty">
+    <h2>Faculty Members</h2>
+    <div class="faculty-grid">
+
+      <!-- Faculty Member 1 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('anitha.jpg');"></div>
+        <h3>Anitha M T</h3>
+        <p><strong>Designation:</strong> Head of Department</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 94478 37725</p>
+        <p><strong>Joining Date:</strong> 20-01-2024</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 2 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('lintu.jpg');"></div>
+        <h3>Lintumol P N</h3>
+        <p><strong>Designation:</strong> Lecturer</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 97444 28332</p>
+        <p><strong>Joining Date:</strong> 15-05-2017</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 3 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('hari.jpg');"></div>
+        <h3>Harikrishnan I</h3>
+        <p><strong>Designation:</strong> Lecturer</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 74065 54714</p>
+        <p><strong>Joining Date:</strong> 13-08-2021</p>
+        <p><strong>Qualification:</strong> B.Tech</p>
+      </div>
+
+      <!-- Faculty Member 4 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('nithish.jpg');"></div>
+        <h3>Nithish A</h3>
+        <p><strong>Designation:</strong> Lecturer</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 94973 52453</p>
+        <p><strong>Joining Date:</strong> 26-08-2022</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 5 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('sreemathy.jpg');"></div>
+        <h3>Sreemathy T G</h3>
+        <p><strong>Designation:</strong> Lecturer</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 99954 01099</p>
+        <p><strong>Joining Date:</strong> 18-08-2023</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 6 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('bindhya.jpg');"></div>
+        <h3>Bindhya V Balakrishnan</h3>
+        <p><strong>Designation:</strong> Lecturer</p>
+        <p><strong>Email:</strong> <a href="mailto:trial@gmail.com">trial@gmail.com</a></p>
+        <p><strong>Phone:</strong> 70341 40606</p>
+        <p><strong>Joining Date:</strong> 02-08-2023</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 7 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('neethu.jpg');"></div>
+        <h3>Neethu K C</h3>
+        <p><strong>Designation:</strong> Demonstrator</p>
+        <p><strong>Email:</strong> <a href="mailto:example7@gmail.com">example7@gmail.com</a></p>
+        <p><strong>Phone:</strong> 77361 99835</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 8 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('praveesh.jpg');"></div>
+        <h3>Praveesh V V</h3>
+        <p><strong>Designation:</strong> Demonstrator</p>
+        <p><strong>Email:</strong> <a href="mailto:example8@gmail.com">example8@gmail.com</a></p>
+        <p><strong>Phone:</strong> 94469 09893</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech, M.Tech</p>
+      </div>
+
+      <!-- Faculty Member 9 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('sobha.jpg');"></div>
+        <h3>Sobha K K</h3>
+        <p><strong>Designation:</strong> Trade Instructor Grade II</p>
+        <p><strong>Email:</strong> <a href="mailto:example9@gmail.com">example9@gmail.com</a></p>
+        <p><strong>Phone:</strong> 96561 29948</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech</p>
+      </div>
+
+      <!-- Faculty Member 10 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('unnikrishnan.jpg');"></div>
+        <h3>Unnikrishnan P</h3>
+        <p><strong>Designation:</strong> Trade Instructor Grade II</p>
+        <p><strong>Email:</strong> <a href="mailto:example10@gmail.com">example10@gmail.com</a></p>
+        <p><strong>Phone:</strong> 12345 67890</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech(Trial)</p>
+      </div>
+
+      <!-- Faculty Member 11 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('praji.jpg');"></div>
+        <h3>Praji M G</h3>
+        <p><strong>Designation:</strong> Tradesman</p>
+        <p><strong>Email:</strong> <a href="mailto:example11@gmail.com">example11@gmail.com</a></p>
+        <p><strong>Phone:</strong> 95449 34740</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech(Trial)</p>
+    </div>
+      <!-- Faculty Member 12 -->
+      <div class="faculty-member">
+        <div class="faculty-photo" style="background-image: url('hima.jpg');"></div>
+        <h3>Hima A G</h3>
+        <p><strong>Designation:</strong> Tradesman-Guest</p>
+        <p><strong>Email:</strong> <a href="mailto:example12@gmail.com">example12@gmail.com</a></p>
+        <p><strong>Phone:</strong> 82810 44730</p>
+        <p><strong>Joining Date:</strong> [Date]</p>
+        <p><strong>Qualification:</strong> B.Tech(Trial)</p>
+      </div>
+  </section>
+
+  <section id="materials">
+    <h2>Study Materials</h2>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 1</a></li>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 2</a></li>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 3</a></li>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 4</a></li>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 5</a></li>
+    <li><a href="https://www.shutterstock.com/image-vector/coming-soon-speechbubble-advertising-megaphone-600nw-2511768889.jpg" target="_blank">Semester 6</a></li>
+  </section>
+
+  <section id="contact">
+    <h2><strong>Address</strong></h2>
+    <p>Maharaja's Technological Institute,</p>
+    <p>Chembukavu P.O,</p>
+    <p>Thrissur</p>
+    <p>PINCODE: 680020</p>
+    <a href="https://maps.app.goo.gl/t7XZrdG1WQgo3E3y6" target="_blank">Google Map Location</a>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 1234567890</p>
+  </section>
+  
+  <footer>
+    <div class="footer-grid" id="links">
+      <div>
+        <h3>Contact</h3>
+        <p>MTI Thrissur<br>Electronics Department<br>Phone: 1234567890</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="materials">Study Materials</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="https://www.dtekerala.gov.in/" target="_blank">DTE Kerala</a></li>
+          <li><a href="https://www.sbte.kerala.gov.in/login" target="_blank">SBTE</a></li>
+          <li><a href="https://www.aicte-india.org/feedback/index.php" target="_blank">AICTE Feedback</a></li>
+          <li><a href="https://sitttrkerala.ac.in/index.php?r=site%2Fhome" target="_blank">SITTTR Kerala</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Electronics Department, MTI Thrissur. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
