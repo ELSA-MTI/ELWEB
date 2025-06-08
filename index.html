@@ -23,6 +23,7 @@
 
     nav {
       background: #1a2030;
+      <button class="header-toggle-btn" onclick="toggleHeader()">Toggle Header</button>
       padding: 15px 0;
       text-align: center;
       position: sticky;
@@ -421,5 +422,15 @@
       &copy; 2025 Electronics Department, MTI Thrissur. All Rights Reserved.
     </div>
   </footer>
+<script>
+  function toggleHeader() {
+    const header = document.querySelector("header");
+    if (header.style.display === "none") {
+      header.style.display = "block";
+    } else {
+      header.style.display = "none";
+    }
+  }
+</script>
 </body>
 </html>
